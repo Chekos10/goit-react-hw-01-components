@@ -1,8 +1,10 @@
+import { randomColor } from 'randomcolor'
+import css from '../transaction/transaction.module.css'
 export const TransactionHistory = ({items}) =>{
     return (
-<div className="transaction">
+<div className={css.transaction}>
     <table className="transaction-history">
-    <thead>
+    <thead className={css.headerOfTable}>
     <tr>
         <th>Type</th>
         <th>Amount</th>
@@ -12,10 +14,10 @@ export const TransactionHistory = ({items}) =>{
     <tbody>
     {items.map(transaction=>{
         return (
-        <tr key={transaction.id}>
-            <td>{transaction.type}</td>
-            <td>{transaction.amount}</td>
-            <td>{transaction.currency}</td>
+        <tr className={css.operation} key={transaction.id}>
+            <td style={{backgroundColor:randomColor()}} className={css.type}>{transaction.type}</td>
+            <td className={css.amount}>{transaction.amount}</td>
+            <td className={css.currency}>{transaction.currency}</td>
         </tr>
         )
     })}
@@ -24,3 +26,4 @@ export const TransactionHistory = ({items}) =>{
 </div>
     )
 }
+

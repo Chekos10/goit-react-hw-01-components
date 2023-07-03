@@ -1,0 +1,12 @@
+.statistic{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

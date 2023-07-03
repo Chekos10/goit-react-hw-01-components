@@ -1,0 +1,16 @@
+.headerOfTable{
+    background-color: aqua;
+}
+.type{
+    padding: 10px;
+    text-align: center;
+}
+.amount{
+    text-align: center;
+}
+.currency{
+    text-align: center;
+}
+.transaction{
+    background-color: aliceblue;
+}
