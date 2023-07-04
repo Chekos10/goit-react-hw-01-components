@@ -1,5 +1,6 @@
 import { randomColor } from 'randomcolor'
 import css from '../statistic/statistic.module.css'
+import PropTypes from 'prop-types';
 export const Statistics = ({statss}) => {
     return (
         <div className={css.statistic}>
@@ -14,4 +15,12 @@ export const Statistics = ({statss}) => {
         </div>
     )
 }
-
+Statistics.propTypes = {
+    stats: PropTypes.arrayOf(
+    PropTypes.exact({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+    })
+    ).isRequired,
+};

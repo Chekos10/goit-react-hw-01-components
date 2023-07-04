@@ -1,5 +1,6 @@
 import { randomColor } from 'randomcolor'
 import css from '../transaction/transaction.module.css'
+import PropTypes from 'prop-types';
 export const TransactionHistory = ({items}) =>{
     return (
 <div className={css.transaction}>
@@ -26,4 +27,14 @@ export const TransactionHistory = ({items}) =>{
 </div>
     )
 }
+TransactionHistory.propTypes = {
+    items: PropTypes.arrayOf(
+    PropTypes.exact({
+        id: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        currency: PropTypes.string.isRequired,
+    })
+    ).isRequired,
+};
 
