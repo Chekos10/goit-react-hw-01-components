@@ -1,12 +1,17 @@
-.statistic{
-    display: flex;
-    margin-bottom: 10px;
-
+.list {
+  display: flex;
+  margin-bottom: 10px;
 }
-.item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.statHeader{
+  text-align: center;
+}
+.statistics{
+  background-color: aliceblue;
 }

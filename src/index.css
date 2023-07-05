@@ -13,7 +13,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#root{
+#root {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,11 +23,11 @@ code {
 h1,
 h2,
 h3,
-p{
+p {
   margin: 0;
 }
 
-ul{
+ul {
   padding: 0;
   list-style: none;
 }
