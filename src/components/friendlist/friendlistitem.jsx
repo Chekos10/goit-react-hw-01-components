@@ -1,17 +1,10 @@
 import PropTypes from 'prop-types';
-import css from '../friendlist/friendlist.module.css'
-export const FriendListItem = ({avatar,name,isOnline}) => {
+import css from '../friendlist/friendlist.module.css';
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={css.item}>
-      <span
-        className={isOnline ? css.onlineStatus : css.offlineStatus}
-      ></span>
-      <img
-        className="avatar"
-        src={avatar}
-        alt="User avatar"
-        width="48"
-      />
+      <span className={isOnline ? css.onlineStatus : css.offlineStatus}></span>
+      <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <p className={css.name}>{name}</p>
     </li>
   );
